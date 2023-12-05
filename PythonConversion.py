@@ -36,6 +36,14 @@ elif userNum == 2:
         if player.number % 2 != 0:
             print(player.displayPlayer())
 #  elif userNum == 3:
-#  elif userNum == 4:
+elif userNum == 4:
+    print("Enter Name: ")
+    newName = input()
+    print("Enter Number: ")
+    newNumber = int(input())
+    p = Player(newName, newNumber)
+    pList.append(p)
+    for player in pList:
+        print(player.displayPlayer())
 else:
     print("Invalid input")
