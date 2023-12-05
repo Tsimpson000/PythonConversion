@@ -35,7 +35,12 @@ elif userNum == 2:
     for player in pList:
         if player.number % 2 != 0:
             print(player.displayPlayer())
-#  elif userNum == 3:
+elif userNum == 3:
+    print("Enter Letter: ")
+    userLetter = input()
+    for player in pList:
+        if player.name.startswith(userLetter):
+            print(player.displayPlayer())
 elif userNum == 4:
     print("Enter Name: ")
     newName = input()
